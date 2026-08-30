@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Private security report
+    url: https://github.com/firststepmontessori/firststepmontessori/security
+    about: Use the repository security area for sensitive vulnerability reports.
