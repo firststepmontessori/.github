@@ -1,0 +1,52 @@
+name: Bug report
+description: Report a reproducible problem with a First Step Montessori project.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: >-
+        Do not include child, parent or staff personal information in this public
+        issue.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the observed behaviour and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: How can we reproduce it?
+      description: Provide a minimal sequence of steps without sensitive data.
+    validations:
+      required: true
+  - type: dropdown
+    id: theme
+    attributes:
+      label: Theme
+      options:
+        - Calm Prepared Garden
+        - Joyful Geometry
+        - Both themes
+        - Not theme-specific
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Colour mode
+      options:
+        - System
+        - Light
+        - Night
+        - Not mode-specific
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Browser and device
+      description: Include browser, operating system and viewport where relevant.

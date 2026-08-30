@@ -1,0 +1,35 @@
+name: Content correction
+description: Suggest a factual or wording correction without sharing private data.
+title: "[Content]: "
+labels:
+  - content
+body:
+  - type: markdown
+    attributes:
+      value: >-
+        Do not submit child names, family details, consent records or other
+        sensitive information in this public form.
+  - type: input
+    id: location
+    attributes:
+      label: Page or document
+      description: Link to or name the affected page or document.
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Current wording or claim
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Suggested correction
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Verification source
+      description: Provide a public source or explain who can verify the fact privately.
